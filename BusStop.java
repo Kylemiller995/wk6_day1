@@ -11,9 +11,18 @@ public class BusStop{
     return this.name;
   }
 
-  public int waitingPeopleCount(){
-    return this.waitingPeople;
+  public void peopleLeaveBus(Bus bus){
+    int numPeople = bus.passengerCount();
+    bus.unload();
+    return numPeople;
+    }
+
+
+
+
+
   }
+
 
 
 
